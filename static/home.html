@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="en">
+
+
   <head>
     <title>Todo</title>
     <link rel="icon" href="/favicon.ico" />
@@ -69,21 +71,35 @@
         font-weight: bold;
         font-family: Arial, sans-serif;
       }
+      .container {
+        position: relative;
+        min-height: 98vh;
+      }
+
+      .row{
+        display: block;
+        padding-bottom: 45px;
+      }
+
       .footer {
-        font-size: medium;
+        font-size: small;
         position: absolute;
-        padding-bottom: 50px;
         text-align: center;
         bottom: 0;
         width: 100%;
-        height: 25px;            /* Footer height */
+        height: 25px; 
       }
+      
     </style>
   </head>
+
+
+
+
   <body>
     <div class="container" id="root">
         <div class="row">
-            <div class="col-6 offset-3">
+            <div class="col-10 offset-1">
                 <br><br>
                 <div class="card">
                   <div class="todo-title">
@@ -112,8 +128,11 @@
                 </div>
             </div>
         </div>
+        <footer class="footer">Created by Mobenul Haq - <a href="https://mobenh.com/" target="_blank" rel="noreferrer">mobenh.com</a></footer>
     </div>
-    <footer class="footer">Created by Mobenul Haq - <a href="https://mobenh.com/" target="_blank" rel="noreferrer">mobenh.com</a></footer>
+   
+    
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -195,4 +214,7 @@
       });
     </script>
   </body>
+
+  
+
 </html>
