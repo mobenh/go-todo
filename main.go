@@ -52,7 +52,7 @@ func init() {
 }
 
 func homeHandler(w http.ResponseWriter, r *http.Request) {
-	err := rnd.Template(w, http.StatusOK, []string{"static/home.html"}, nil)
+	err := rnd.Template(w, http.StatusOK, []string{"index.html"}, nil)
 	checkErr(err)
 }
 
